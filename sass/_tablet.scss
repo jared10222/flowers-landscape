@@ -1,0 +1,88 @@
+/*----- TABLET -----*/
+
+/*----- Header -----*/
+#headerWrapper {
+
+    header {
+        position: relative;
+        text-align:left;
+
+        div#contact {
+            text-align:center;
+            position:absolute;
+            bottom:0; margin-bottom: .5em;
+            right:0; margin-right: $site-margin;    
+        }
+    }/* end header nesting */
+}/* end headerWrapper nesting*/
+
+
+
+ nav {
+
+     button#showPhoneNav {
+         display:none;
+     }
+     max-width: 1141px;
+     margin: 0 auto;
+     ul {
+         display:block !important;
+         margin: 0 $site-margin;
+
+         li {
+             float:left;
+             width: auto;
+             /*width: 16.66666%;*/
+             margin:0;
+
+             a {
+                 border-right:1px solid rgba(0,0,0,0.1);
+                 border-left:1px solid rgba(255,255,255,0.1);
+                 border-bottom: none;
+             }
+         }
+     }
+ }
+
+
+ .content-img {
+    $width: 6 / 12 * 100%;
+    width: $width;
+    float:right;
+    margin: 5px 0 2% 2%;
+}
+
+ /*----- SERVICES ------*/
+ .row {
+
+     .services-column {
+         width:46%;
+         float:left;
+         margin: 10px 2%;
+         padding: .5em 0;
+         border-radius: 10px;
+
+         a {
+             font-family: $h-font;
+             font-size: 1.8em;
+             text-decoration:none;
+         }
+     }
+ }
+
+
+  /*----- CONTACT FORM STYLES -----*/
+ form {
+     margin:10px 0;
+ }
+
+
+ #content article p {
+     padding-right:30px;
+ }
+
+
+ /*----- LANDSCAPE SERVICES IMAGE -----*/
+.landscape-services-img {
+   margin-right: 30px;
+}

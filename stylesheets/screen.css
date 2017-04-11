@@ -1,0 +1,943 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../Users/Jared/AppData/Local/Temp/Rar$EXa0.520/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Users/Jared/AppData/Local/Temp/Rar$EXa0.520/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Users/Jared/AppData/Local/Temp/Rar$EXa0.520/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Users/Jared/AppData/Local/Temp/Rar$EXa0.520/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Users/Jared/AppData/Local/Temp/Rar$EXa0.520/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Users/Jared/AppData/Local/Temp/Rar$EXa0.520/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Users/Jared/AppData/Local/Temp/Rar$EXa0.520/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Users/Jared/AppData/Local/Temp/Rar$EXa0.520/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Users/Jared/AppData/Local/Temp/Rar$EXa0.520/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*----- PHONE -----*/
+@font-face {
+  font-family: logoFont;
+  src: url("../fonts/Capsuula.ttf");
+}
+/*Theory of Evolution Branding*/
+/*----- Prevents iPhone from resizing in landscape mode -----*/
+/* line 40, ../sass/_phone-default.scss */
+html {
+  -webkit-text-size-adjust: none;
+}
+
+/**********************************************/
+/********** UPDATED BOX MODEL *****************/
+/**********************************************/
+/* line 47, ../sass/_phone-default.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 50, ../sass/_phone-default.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 54, ../sass/_phone-default.scss */
+body {
+  font-size: 16px;
+  background-color: #1a1a1a;
+  padding-bottom: 130px;
+  color: #f2f2f2;
+}
+
+/* line 61, ../sass/_phone-default.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*----- Header -----*/
+/* line 67, ../sass/_phone-default.scss */
+#headerWrapper {
+  width: 100%;
+  background-color: #000;
+  /* end header nesting */
+}
+/* line 71, ../sass/_phone-default.scss */
+#headerWrapper header {
+  /*min-width: 320px;*/
+  max-width: 1141px;
+  margin: 0 auto;
+  text-align: center;
+  /* end div#contact nesting */
+}
+/* line 77, ../sass/_phone-default.scss */
+#headerWrapper header img {
+  margin: 0.5em 2%;
+}
+/* line 81, ../sass/_phone-default.scss */
+#headerWrapper header div#contact {
+  color: #6AB543;
+  margin: 0.5em 2%;
+}
+/* line 84, ../sass/_phone-default.scss */
+#headerWrapper header div#contact p {
+  font-family: "Oswald", sans-serif;
+  color: #f2f2f2;
+  -webkit-appearance: none;
+}
+/* line 89, ../sass/_phone-default.scss */
+#headerWrapper header div#contact h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+/* end headerWrapper nesting*/
+/* line 99, ../sass/_phone-default.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  padding: .2em 0;
+  /*font-weight:$font-large;*/
+}
+
+/* line 104, ../sass/_phone-default.scss */
+h1 {
+  font-size: 2.8em;
+  color: #6AB543;
+}
+
+/* line 108, ../sass/_phone-default.scss */
+h2 {
+  font-size: 2.2em;
+}
+
+/* line 111, ../sass/_phone-default.scss */
+h3 {
+  font-size: 1.8em;
+}
+
+/* line 115, ../sass/_phone-default.scss */
+p {
+  font-family: "Open Sans", sans-serif;
+  /* padding:.2em 0;
+   font-weight:$font-medium;
+   line-height:1.4em;
+   font-size:1.2em;*/
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+/* line 127, ../sass/_phone-default.scss */
+address {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*----- NAVIGATION -----*/
+/* line 134, ../sass/_phone-default.scss */
+ul#myNav {
+  display: none;
+}
+
+/* line 137, ../sass/_phone-default.scss */
+#navWrapper {
+  background: -moz-linear-gradient(top, #1A1A1A 0%, #262626 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1A1A1A 0%, #262626 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1A1A1A 0%, #262626 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$start, endColorstr=$end,GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 140, ../sass/_phone-default.scss */
+nav {
+  /* end ul nesting */
+}
+/* line 142, ../sass/_phone-default.scss */
+nav button#showPhoneNav {
+  position: relative;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #f2f2f2;
+  font-weight: 400;
+  font-size: 1.2em;
+  display: block;
+  border: none;
+  width: 96%;
+  margin: 0 2%;
+  padding: .75em;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+/* line 157, ../sass/_phone-default.scss */
+nav button#showPhoneNav i {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+}
+/* line 163, ../sass/_phone-default.scss */
+nav ul {
+  list-style-type: none;
+  /* end li nesting*/
+}
+/* line 167, ../sass/_phone-default.scss */
+nav ul li a {
+  font-family: "Pathway Gothic One", sans-serif;
+  text-align: center;
+  display: block;
+  font-weight: 300;
+  padding: .6em .5em;
+  font-size: 1.2em;
+  width: 100%;
+  text-decoration: none;
+  color: #f2f2f2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* line 179, ../sass/_phone-default.scss */
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* end nav nesting */
+/*----- CONTENT -----*/
+/* line 188, ../sass/_phone-default.scss */
+#contentWrapper {
+  width: 100%;
+}
+/* line 191, ../sass/_phone-default.scss */
+#contentWrapper #content {
+  max-width: 1141px;
+  margin: 0 auto;
+}
+/* line 195, ../sass/_phone-default.scss */
+#contentWrapper #content article {
+  margin: 1em 2%;
+}
+/* line 198, ../sass/_phone-default.scss */
+#contentWrapper #content article a {
+  color: #C5DD81;
+}
+/* line 201, ../sass/_phone-default.scss */
+#contentWrapper #content article a:hover {
+  color: #f2f2f2;
+}
+
+/*----- SERVICES ------*/
+/* line 211, ../sass/_phone-default.scss */
+.row {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 216, ../sass/_phone-default.scss */
+.row .services-column {
+  width: 100%;
+  display: block;
+  text-align: center;
+  border: 1px solid #6AB543;
+  margin: 10px auto 0 auto;
+  padding: .5em 0;
+  border-radius: 10px;
+}
+/* line 225, ../sass/_phone-default.scss */
+.row .services-column a {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #f2f2f2 !important;
+  display: block;
+}
+/* line 232, ../sass/_phone-default.scss */
+.row .services-column a:hover {
+  color: #C5DD81 !important;
+}
+
+/*----- CONTACT FORM STYLES -----*/
+/* line 242, ../sass/_phone-default.scss */
+form {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* line 248, ../sass/_phone-default.scss */
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .2em;
+}
+
+/* line 253, ../sass/_phone-default.scss */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  background-color: #f4f2ef;
+  color: #917a56;
+  padding: .3em .3em .3em 2em;
+  border: solid 1px #b0aaa0;
+  border-radius: 5px;
+  font-size: .9em;
+  width: 100%;
+  background-image: url("../images/red_asterisk.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+  margin-bottom: 20px;
+}
+
+/*The input that currently has the focus*/
+/* line 269, ../sass/_phone-default.scss */
+input:focus {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+/*identifies all required fields*/
+/* line 273, ../sass/_phone-default.scss */
+input:required {
+  background-image: url("../images/red_asterisk.png");
+  background-position: center left;
+  /*shows the red star*/
+}
+
+/*Validation*/
+/* line 278, ../sass/_phone-default.scss */
+input:focus:invalid {
+  background-image: url("../images/invalid.png");
+  background-position: center left;
+  /*shows the yellow circle*/
+}
+
+/*Valid*/
+/* line 283, ../sass/_phone-default.scss */
+input:required:valid {
+  background-color: #fff;
+  background-image: url("../images/valid.png");
+  background-position: center left;
+  /*shows the green check*/
+}
+
+/* line 289, ../sass/_phone-default.scss */
+select,
+textarea {
+  background-color: #f4f2ef;
+  color: #917a56;
+  padding: .3em .3em .3em 0;
+  border: solid 1px #b0aaa0;
+  border-radius: 5px;
+  font-size: .9em;
+  width: 100%;
+}
+
+/* Button Style */
+/* line 300, ../sass/_phone-default.scss */
+button.submit {
+  background: -moz-linear-gradient(top, #68b12f 0%, #50911e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #68b12f 0%, #50911e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #68b12f 0%, #50911e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$start, endColorstr=$end,GradientType=0 );
+  /* IE6-9 */
+  border: 1px solid #509111;
+  border-bottom: 1px solid #5b992b;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 #9fd574 inset;
+  -moz-box-shadow: 0 1px 0 #9fd574 inset;
+  -ms-box-shadow: 0 1px 0 #9fd574 inset;
+  -o-box-shadow: 0 1px 0 #9fd574 inset;
+  box-shadow: 0 1px 0 #9fd574 inset;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+  text-shadow: 0 -1px 0 #396715;
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+
+/* line 319, ../sass/_phone-default.scss */
+button.submit:hover {
+  opacity: .85;
+  cursor: pointer;
+}
+
+/* line 323, ../sass/_phone-default.scss */
+button.submit:active {
+  border: 1px solid #20911e;
+  -webkit-box-shadow: 0 0 10px #356b0b inset;
+  -moz-box-shadow: 0 0 10px #356b0b inset;
+  -ms-box-shadow: 0 0 10px #356b0b inset;
+  -o-box-shadow: 0 0 10px #356b0b inset;
+  box-shadow: 0 0 10px #356b0b inset;
+}
+
+/*----- IMAGE GALLERY STYLES -----*/
+/* line 331, ../sass/_phone-default.scss */
+.landscape-image-gallery a.fancybox img {
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 4px #6AB543 ;
+  -moz-box-shadow: 0px 0px 4px #6AB543 ;
+  -ms-box-shadow: 0px 0px 4px #6AB543 ;
+  -o-box-shadow: 0px 0px 4px #6AB543 ;
+  box-shadow: 0px 0px 4px #6AB543 ;
+}
+
+/* line 335, ../sass/_phone-default.scss */
+.center-images {
+  text-align: center;
+}
+
+/*----- SAMPLES -----*/
+/* line 340, ../sass/_phone-default.scss */
+#samples {
+  text-align: center;
+}
+
+/* line 343, ../sass/_phone-default.scss */
+#samples a.fancybox {
+  font-size: 1.6em;
+}
+
+/*///////////////////*/
+/*PAGINATION STYLES*/
+/*///////////////////*/
+/* line 352, ../sass/_phone-default.scss */
+.paginate {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  margin: 0 auto;
+  width: 90%;
+  font-size: 1.2em;
+}
+
+/* line 363, ../sass/_phone-default.scss */
+.paginate.pag2 {
+  list-style-type: none;
+}
+
+/* line 365, ../sass/_phone-default.scss */
+.paginate.pag2 li {
+  font-weight: bold;
+}
+
+/* line 367, ../sass/_phone-default.scss */
+.paginate.pag2 li a {
+  display: block;
+  float: left;
+  /*color: #585858;*/
+  color: #000;
+  text-decoration: none;
+  padding: 6px 11px;
+  margin-right: 6px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#eee));
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #eee);
+  background-image: -moz-linear-gradient(top, #f7f7f7, #eee);
+  background-image: -ms-linear-gradient(top, #f7f7f7, #eee);
+  background-image: -o-linear-gradient(top, #f7f7f7, #eee);
+  background-image: linear-gradient(top, #f7f7f7, #eee);
+  -webkit-box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.55);
+  box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.55);
+}
+
+/* line 390, ../sass/_phone-default.scss */
+.paginate.pag2 li a:hover {
+  /*color: #3280dc;*/
+  color: #6cb239;
+}
+
+/* line 394, ../sass/_phone-default.scss */
+.paginate.pag2 li a:active {
+  position: relative;
+  top: 1px;
+  -webkit-box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.55);
+  box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.55);
+}
+
+/* line 402, ../sass/_phone-default.scss */
+.paginate.pag2 li.single, .paginate.pag2 li.current {
+  display: block;
+  float: left;
+  padding: 6px 11px;
+  padding-top: 8px;
+  margin-right: 6px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /*color: #676767;*/
+  color: #FFF;
+}
+
+/* line 418, ../sass/_phone-default.scss */
+.panel {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 5px;
+  box-shadow: 0px 0px 5px #6cb239;
+}
+
+/* line 425, ../sass/_phone-default.scss */
+.border-dashed-bottom {
+  border-bottom: 1px dashed #CCC;
+  opacity: 0.5;
+}
+
+/*----- FOOTER -----*/
+/* line 435, ../sass/_phone-default.scss */
+#footerWrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  background: -moz-linear-gradient(top, #262626 0%, #1a1a1a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #262626 0%, #1a1a1a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #262626 0%, #1a1a1a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$start, endColorstr=$end,GradientType=0 );
+  /* IE6-9 */
+}
+/* line 442, ../sass/_phone-default.scss */
+#footerWrapper footer {
+  color: #f2f2f2;
+  text-align: center;
+}
+/* line 446, ../sass/_phone-default.scss */
+#footerWrapper footer a.theory-brand {
+  text-decoration: none;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 200px;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+/* line 455, ../sass/_phone-default.scss */
+#footerWrapper footer a.theory-brand span.logo-text {
+  font-family: logoFont;
+  font-size: 1.2em;
+  color: #034769;
+  font-weight: bold;
+}
+/* line 461, ../sass/_phone-default.scss */
+#footerWrapper footer a.theory-brand span.logo-text span {
+  color: #FF8900;
+}
+
+/* line 469, ../sass/_phone-default.scss */
+.cta {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 24px;
+  border: 1px solid #568e2e;
+  border-radius: 8px;
+  background: #8ce74a;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8ce74a), to(#568e2e));
+  background: -moz-linear-gradient(top, #8ce74a, #568e2e);
+  background: linear-gradient(to bottom, #8ce74a, #568e2e);
+  text-shadow: #36591d 1px 1px 1px;
+  font: normal normal bold 20px arial;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* line 486, ../sass/_phone-default.scss */
+.cta:hover,
+.cta:focus {
+  border: 1px solid #6cb239;
+  background: #a8ff59;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a8ff59), to(#67aa37));
+  background: -moz-linear-gradient(top, #a8ff59, #67aa37);
+  background: linear-gradient(to bottom, #a8ff59, #67aa37);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 496, ../sass/_phone-default.scss */
+.cta:active {
+  background: #568e2e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#568e2e), to(#568e2e));
+  background: -moz-linear-gradient(top, #568e2e, #568e2e);
+  background: linear-gradient(to bottom, #568e2e, #568e2e);
+}
+
+/* line 502, ../sass/_phone-default.scss */
+.cta:before {
+  content: "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 0 4px -6px -4px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEx0lEQVRIia2VfWhVdRjHP/ecc7frvXvVtbeYzusLy5fJjHxBSVkGUkynJf4ziJQCq1mJEYJJEtEfEQUGEUqiQVR/aC++FtV0c7pw0ticOt3ddvd2d7fde3ffz73nnF9/nDO9hEmDHng48OP5fV+e5+H8ZGYY9QspXlfG6ifymSNpxMdUkjPFeGQ0vVVyXIw2C6P3rAg2faR2fr61+fud2bvKHDj+F4JfGsu+E7EhISKDQkSGhIj7hBi5JHqPbbv1aS3r/1kvzZhBCFBDVgYh5gd7Ie5tH1a9cuj9306+6NyVWa7M3IMBqTDoBiBMQpMZ16JNWS806l+GIh/49l7kHIA8U/iGFWKHOz+y1KZOQnYe6BroCdCToMWxF8yVKnKiz7Zdu/PVYIyEXF1EztPlLOwOMGlKenRsmZ/e4fJ3Lo12XcbmuUD27DngKAQtDloS0jFyy+a5SoJX9G9uqL/LR7ay9+CBhh92b3hs90s1tlWbK6by1ZiI3Q4SfBjhunlsyHOwTFGwJ5MqmudPXGXlYHeCljDdCLCl/BXHzg9+Yft6O4cb3nz9EK55Jl4qSHrCYwx6vf1To4Otnr6Ri8fbROvZXjwWx2ygsqqIqlef5OXnFlFb4S6VnOv3gK5bkgTqWBeb955ersRT6AQ8ILnuC7YXzpPcs+e7qTHcNVqooW7HoDE0MnwvMuFrudkz/uvRZlqavNzYd5Fz3jDvvZvn2+dUvWBzmkPXIdthZ0ERc5WbfnpEaABbbgUI40FXJGEusSTIKiqT3MWPL0YyFq+ondq1fafPaG/vurD+cPj5z65yePNyNpYagZWgmgSGDSbbkGQU5coQt6OBcXKLgyaBTZi7lbF+5keAAUjgsAWkrMlwFeaah6W8WbeR1JXoqgke6AZ1AGRQun0M+QPhUK4aKADjAbicAc60GwMxchf/tTEiMTTAOPgMS1atLdmCMQV6GsL3QA2ABFoaQ0kYhCZDqndBsLuAnCJANl1IwsS/70RH7+3H1x5nRCV8ooOPjzZQW19XeDy/ODsHtRcS45gDgLgfhsNMKIAWiOMhOVqN4QOnCxxOsNlBsmUsqI4oBmeNgjEmAgfXyO+459sXy0oaUnfN9trNFpKCgT5CV4fwKABjUbpRqEcRQBT0KGiAJJkp28AGSh4UFsLqpVQi0iBSpstsU/h0Jm5Ch5/LkaTpgA4fHQKwKdbYFEw1imGldSZbabMSzMEbFrgBWieMDKOd7OAIYCgAl/roSajgzLMA7KZNBJCTcSZbRJn/YGERqJBuBb8HzvRz8vwtLmOV0zXKkD9CqLKUAuwgpiDQbra1sBLk5UBJBomU4UAF0QfRFggmodlP076fOWBJNAlSOqHxMN5KOwViFMa7YVgQlUGJ9uNweSCnHLKrQCoFHCA00Ccg3gNTXkgJjDP9nNr/E28bBv5pg9PvgTY1yT29i2r/OPRp+PZfYE8gRvyNdTSuLWdjSYAcpQ2UWSBbm4wG0TTGjQDdx65z5Ewn3wLhjAY+eHCGE3SNhdj+V5yu106ze2CS64DReIqWHAdL6paxafVcnipyUZyloERUQnfG6fmxkz/u+GgFJqxpPDzqqlnzST0nnFm4/7UIHNbY8wAnM3wRJSBrJhf+S/wNbS430494JFMAAAAASUVORK5CYII=") no-repeat left center transparent;
+  background-size: 100% 100%;
+}
+
+/* line 516, ../sass/_phone-default.scss */
+#cta-container {
+  font-size: 1.5em;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  padding: 5px;
+  margin: 10px auto;
+  border-top: 1px dashed #999;
+}
+
+/* line 524, ../sass/_phone-default.scss */
+#cta-container p {
+  margin-bottom: 10px;
+}
+
+/* line 527, ../sass/_phone-default.scss */
+#cta-container h4 {
+  font-size: 1.4em;
+  padding-bottom: .5em;
+}
+
+/*----- BREADCRUMBS -----*/
+/* line 535, ../sass/_phone-default.scss */
+.bread-crumbs {
+  margin-top: 10px;
+  color: #C5DD81;
+}
+
+/* line 539, ../sass/_phone-default.scss */
+.bread-crumbs i {
+  opacity: .5;
+  margin: 0 4px;
+}
+
+/* line 543, ../sass/_phone-default.scss */
+.bread-crumbs li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+
+/* line 549, ../sass/_phone-default.scss */
+.bread-crumbs a {
+  opacity: 0.5;
+}
+
+/* line 552, ../sass/_phone-default.scss */
+.bread-crumbs a:hover {
+  opacity: 1;
+  color: #f2f2f2;
+}
+
+/*----- LANDSCAPE SERVICES IMAGE -----*/
+/* line 559, ../sass/_phone-default.scss */
+.landscape-services-img {
+  float: right;
+  margin: 5px 0 5px 5px;
+  -webkit-box-shadow: 0 0 4px #6AB543 ;
+  -moz-box-shadow: 0 0 4px #6AB543 ;
+  -ms-box-shadow: 0 0 4px #6AB543 ;
+  -o-box-shadow: 0 0 4px #6AB543 ;
+  box-shadow: 0 0 4px #6AB543 ;
+  max-width: 50%;
+}
+
+/*----- OTHER -----*/
+/* line 567, ../sass/_phone-default.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 572, ../sass/_phone-default.scss */
+.text-indent {
+  text-indent: 1.5em;
+}
+
+/* line 577, ../sass/_phone-default.scss */
+.content-img {
+  width: 100%;
+  box-shadow: 0px 0px 4px #6AB543;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+/* line 585, ../sass/_phone-default.scss */
+p.first:first-letter, .dropcap {
+  float: left;
+  font-size: 4.8em;
+  padding: 2px;
+  font-family: Georgia, Tahoma, sans-serif;
+  margin-right: 10px;
+  line-height: 0.35em;
+  line-height: .85em;
+  color: #6AB543;
+}
+
+/* line 595, ../sass/_phone-default.scss */
+.on a {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #6AB543;
+}
+
+/* line 599, ../sass/_phone-default.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 602, ../sass/_phone-default.scss */
+.text-muted {
+  color: #666;
+}
+
+/* line 605, ../sass/_phone-default.scss */
+.small-text {
+  font-size: .9em;
+}
+
+/* line 609, ../sass/_phone-default.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 612, ../sass/_phone-default.scss */
+#home_pic {
+  margin: 10px auto;
+}
+
+/* line 615, ../sass/_phone-default.scss */
+.green-text {
+  color: #6AB543;
+}
+
+/* line 620, ../sass/_phone-default.scss */
+footer a.share {
+  color: #f2f2f2;
+  opacity: .5;
+}
+
+/* line 625, ../sass/_phone-default.scss */
+footer a.share:hover {
+  opacity: 1;
+}
+
+/* line 626, ../sass/_phone-default.scss */
+footer a.share:active i {
+  transform: translate(2px, 2px);
+}
+
+/* line 629, ../sass/_phone-default.scss */
+footer ul#social {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* line 633, ../sass/_phone-default.scss */
+footer ul#social li {
+  display: inline-block;
+}
+
+/* line 634, ../sass/_phone-default.scss */
+footer ul#social li a {
+  font-size: 2.5em;
+  margin: 0 .2em;
+}
+
+/* line 636, ../sass/_phone-default.scss */
+i {
+  font-style: italic;
+}
+
+/* line 640, ../sass/_phone-default.scss */
+.error {
+  color: #a40202;
+  text-align: center;
+}
+
+/* line 644, ../sass/_phone-default.scss */
+.success {
+  color: #6AB543;
+  text-align: center;
+}
+
+/* line 649, ../sass/_phone-default.scss */
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  /*----- TABLET -----*/
+  /*----- Header -----*/
+  /* line 4, ../sass/_tablet.scss */
+  #headerWrapper {
+    /* end header nesting */
+  }
+  /* line 6, ../sass/_tablet.scss */
+  #headerWrapper header {
+    position: relative;
+    text-align: left;
+  }
+  /* line 10, ../sass/_tablet.scss */
+  #headerWrapper header div#contact {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: .5em;
+    right: 0;
+    margin-right: 2%;
+  }
+
+  /* end headerWrapper nesting*/
+  /* line 21, ../sass/_tablet.scss */
+  nav {
+    max-width: 1141px;
+    margin: 0 auto;
+  }
+  /* line 23, ../sass/_tablet.scss */
+  nav button#showPhoneNav {
+    display: none;
+  }
+  /* line 28, ../sass/_tablet.scss */
+  nav ul {
+    display: block !important;
+    margin: 0 2%;
+  }
+  /* line 32, ../sass/_tablet.scss */
+  nav ul li {
+    float: left;
+    width: auto;
+    /*width: 16.66666%;*/
+    margin: 0;
+  }
+  /* line 38, ../sass/_tablet.scss */
+  nav ul li a {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: none;
+  }
+
+  /* line 48, ../sass/_tablet.scss */
+  .content-img {
+    width: 50%;
+    float: right;
+    margin: 5px 0 2% 2%;
+  }
+
+  /*----- SERVICES ------*/
+  /* line 58, ../sass/_tablet.scss */
+  .row .services-column {
+    width: 46%;
+    float: left;
+    margin: 10px 2%;
+    padding: .5em 0;
+    border-radius: 10px;
+  }
+  /* line 65, ../sass/_tablet.scss */
+  .row .services-column a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.8em;
+    text-decoration: none;
+  }
+
+  /*----- CONTACT FORM STYLES -----*/
+  /* line 75, ../sass/_tablet.scss */
+  form {
+    margin: 10px 0;
+  }
+
+  /* line 80, ../sass/_tablet.scss */
+  #content article p {
+    padding-right: 30px;
+  }
+
+  /*----- LANDSCAPE SERVICES IMAGE -----*/
+  /* line 86, ../sass/_tablet.scss */
+  .landscape-services-img {
+    margin-right: 30px;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  /*----- DESKTOP -----*/
+  /* line 2, ../sass/_desktop.scss */
+  #content article p {
+    padding-right: 0;
+  }
+
+  /*----- LANDSCAPE SERVICES IMAGE -----*/
+  /* line 7, ../sass/_desktop.scss */
+  .landscape-services-img {
+    margin-right: 0;
+  }
+}

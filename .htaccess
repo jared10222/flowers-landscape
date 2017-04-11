@@ -1,0 +1,221 @@
+## EXPIRES CACHING ##
+
+<IfModule mod_expires.c>
+
+ExpiresActive On
+
+ExpiresByType image/jpg "access 1 month"
+
+ExpiresByType image/jpeg "access 1 month"
+
+ExpiresByType image/gif "access 1 year"
+
+ExpiresByType image/png "access 1 month"
+
+ExpiresByType text/css "access plus 1 week"
+
+ExpiresByType text/html "access plus 0 seconds"
+
+ExpiresByType application/pdf "access 1 month"
+
+ExpiresByType text/x-javascript "access plus 1 week"
+
+ExpiresByType application/x-shockwave-flash "access 1 month"
+
+ExpiresByType image/x-icon "access 1 year"
+
+ExpiresDefault "access 1 month"
+
+</IfModule>
+
+## EXPIRES CACHING ##
+
+
+
+
+
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+
+RewriteBase /
+
+#TURN THESE TWO ON FOR LIVE SERVER
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+
+
+
+
+
+
+#NC makes the rule non case sensitive
+
+#L makes this the last rule that this specific condition will match
+
+
+
+# check that the request url is neither a file nor a directory
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+#page not found redirect
+
+ErrorDocument 404 /404.php
+
+
+
+#Rewrite for index.php
+
+#RewriteRule ^/$ index.php [NC,L]
+
+
+
+#prevent index.php infinite loop
+
+DirectoryIndex sitehome.php
+
+
+
+
+
+
+
+#Rewrite for contact.php?successMsg=true
+
+RewriteRule ^contact-us/success/(.*)$ contact-us.php?successMsg=$1 [NC,B]
+
+
+
+#Rewrite for contact.php?errorMsg=true
+
+RewriteRule ^contact-us/error/(.*)$ contact-us.php?errorMsg=$1 [NC,B]
+
+
+
+#Rewrite for contact.php
+
+RewriteRule ^contact-us$ contact-us.php [NC,L]
+
+
+
+#Rewrite for image_gallery.php
+
+RewriteRule ^landscape-image-gallery$ landscape-image-gallery.php [NC,L]
+
+
+
+#Rewrite for sample_plans.php
+
+RewriteRule ^sample-landscape-plans$ sample-landscape-plans.php [NC,L]
+
+
+
+#Rewrite for services.php?category=xxxxx
+
+#RewriteRule ^landscape-services/([0-9a-zA-Z_-]+) services.php?category=$1 [NC,L]
+
+
+
+
+
+
+
+
+
+
+
+#Rewrite for testimonials.php?review=true
+
+RewriteRule ^testimonials/([a-zA-Z_-]+)$ testimonials.php?review=$1 [NC,L]
+
+
+
+#Rewrite for testimonials.php?successMsg=true
+
+RewriteRule ^testimonials/success/(.*)$ testimonials.php?successMsg=$1 [NC,B]
+
+
+
+#Rewrite for testimonials.php?errorMsg=true
+
+RewriteRule ^testimonials/error/(.*)$ testimonials.php?errorMsg=$1 [NC,B]
+
+
+
+#Rewrite for testimonials.php?page=1
+
+RewriteRule ^testimonials/page/([0-9]+)$ testimonials.php?page=$1 [NC,L]
+
+
+
+#Rewrite for testimonials.php
+
+RewriteRule ^testimonials$ testimonials.php [NC,L]
+
+
+
+
+
+
+
+RewriteRule ^landscape-services/concrete-patios$ concrete-patios.php [NC,L]
+
+RewriteRule ^landscape-services/pool-design-and-construction$ pool-design-and-construction.php [NC,L]
+
+RewriteRule ^landscape-services/grading-and-drainage$ grading-and-drainage.php [NC,L]
+
+RewriteRule ^landscape-services/irrigation$ irrigation.php [NC,L]
+
+RewriteRule ^landscape-services/landscape-lighting$ landscape-lighting.php [NC,L]
+
+RewriteRule ^landscape-services/pergolas$ pergolas.php [NC,L]
+
+RewriteRule ^landscape-services/masonry-work$ masonry-work.php [NC,L]
+
+RewriteRule ^landscape-services/landscape-installation$ landscape-installation.php [NC,L]
+
+RewriteRule ^landscape-services/pool-house-and-cabanas$ pool-house-and-cabanas.php [NC,L]
+
+RewriteRule ^landscape-services/water-features$ water-features.php [NC,L]
+
+RewriteRule ^landscape-services/land-clearing$ land-clearing.php [NC,L]
+
+RewriteRule ^landscape-services/landscape-maintenance$ landscape-maintenance.php [NC,L]
+
+RewriteRule ^landscape-services/snow-removal$ snow-removal.php [NC,L]
+
+RewriteRule ^landscape-services/ornamental-fencing$ ornamental-fencing.php [NC,L]
+
+RewriteRule ^landscape-services/landscape-design$ landscape-design.php [NC,L]
+
+
+
+
+
+
+
+#Rewrite for services.php
+
+RewriteRule ^landscape-services$ landscape-services.php [NC,L]
+
+
+
+
+
+#rewrite for article.php?id=1&title=Title-Goes-Here
+
+#RewriteRule ^article/([0-9]+)/([0-9a-zA-Z_-]+) article.php?id=$1&title=$2 [NC,L]
+
+
+
+#to sanitize the get variable later on
+
+#preg_replace('#[^0-9a-z_-]#i', '', $_GET['title']);
